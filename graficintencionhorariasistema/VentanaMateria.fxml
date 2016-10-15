@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="graficintencionhorariasistema.VentanaMateriaController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="labelCodigo" layoutX="55.0" layoutY="47.0" text="codigo" />
+            <TextField layoutX="136.0" layoutY="42.0" />
+            <Label layoutX="50.0" layoutY="89.0" text="nombre" />
+            <Label layoutX="36.0" layoutY="134.0" text="peso Horario" />
+            <Label layoutX="35.0" layoutY="184.0" text="preriquisitos" />
+            <Label layoutX="50.0" layoutY="226.0" text="Creditos" />
+            <Button layoutX="369.0" layoutY="317.0" mnemonicParsing="false" text="Salir" />
+            <Button layoutX="163.0" layoutY="317.0" mnemonicParsing="false" text="Registrar" />
+            <TextField layoutX="136.0" layoutY="84.0" />
+            <TextField layoutX="136.0" layoutY="129.0" />
+            <TextField layoutX="136.0" layoutY="221.0" />
+            <ChoiceBox layoutX="136.0" layoutY="179.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="202.0" prefWidth="222.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graficintencionhorariasistema.VentanaPrincipalController">
+   <children>
+      <Pane blendMode="SRC_ATOP" depthTest="DISABLE" prefHeight="201.0" prefWidth="222.0">
+         <children>
+            <Button fx:id="buttonRePro" layoutX="42.0" layoutY="83.0" mnemonicParsing="false" onAction="#nuevaVentanaPrograma" text="Registrar Programa" />
+            <Button fx:id="buttonReFa" layoutX="44.0" layoutY="33.0" mnemonicParsing="false" onAction="#nuevaVentanaFacultad" text="Registrar Facultad" />
+            <Button fx:id="buttonReMA" layoutX="47.0" layoutY="137.0" mnemonicParsing="false" onAction="#nuevaVentanaMateria" text="Registrar Materia" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
