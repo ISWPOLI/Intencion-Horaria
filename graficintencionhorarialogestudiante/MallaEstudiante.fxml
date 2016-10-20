@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="graficintencionhorarialogestudiante.MallaEstudianteController">
+   <children>
+      <Label layoutX="89.0" layoutY="36.0" prefHeight="16.0" prefWidth="179.0" text="Malla Estudiante " />
+      <CheckBox layoutX="202.0" layoutY="81.0" mnemonicParsing="false" text="CheckBox" />
+      <TextField layoutX="36.0" layoutY="77.0" />
+      <TextField layoutX="310.0" layoutY="146.0" />
+      <TextField layoutX="310.0" layoutY="77.0" />
+      <TextField layoutX="36.0" layoutY="146.0" />
+      <CheckBox layoutX="202.0" layoutY="150.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="481.0" layoutY="150.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="481.0" layoutY="81.0" mnemonicParsing="false" text="CheckBox" />
+      <TextField layoutX="310.0" layoutY="209.0" />
+      <TextField layoutX="36.0" layoutY="209.0" />
+      <TextField layoutX="36.0" layoutY="262.0" />
+      <TextField layoutX="310.0" layoutY="262.0" />
+      <CheckBox layoutX="472.0" layoutY="213.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="202.0" layoutY="266.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="202.0" layoutY="213.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox layoutX="472.0" layoutY="266.0" mnemonicParsing="false" text="CheckBox" />
+   </children>
+</AnchorPane>
