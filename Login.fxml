@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.LoginController">
+   <children>
+      <GridPane layoutX="150.0" layoutY="186.0" prefHeight="200.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Sede" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Label text="Identificación" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label text="Código" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <TextField fx:id="txtCodigo" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <PasswordField id="*" fx:id="txtIdentificacion" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <ComboBox fx:id="boxSede" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#oprimirBotonEntrar" text="Entrar" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#oprimirBotonSalir" text="Salir" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <Label layoutX="102.0" layoutY="63.0" styleClass="label-header" text="INTENCIÓN HORARIA" />
+      <Label layoutX="8.0" layoutY="376.0" styleClass="label-bright" text="Gabriel Álvarez" />
+      <Label layoutX="8.0" layoutY="355.0" styleClass="label-bright" text="Anderson López" />
+      <Label layoutX="8.0" layoutY="334.0" styleClass="label-bright" text="Nicolás Martínez" />
+   </children>
+</AnchorPane>

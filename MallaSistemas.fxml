@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="629.0" prefWidth="622.0" styleClass="root" stylesheets="@estiloMallas.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.MallaSistemasController">
+   <children>
+      <BorderPane prefHeight="629.0" prefWidth="622.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <GridPane prefHeight="542.0" prefWidth="758.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnPensamiento" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Pensamiento algoritmico" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnIntro" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Introduccion a la Ingenieria y Ciencias Basicas" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnCatedra" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Catedra Grancolombiana" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnMatematicas" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Matematicas" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnLecto" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Lecto-escritura" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnProgramacion" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Programacion de computadores" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnCalculo3" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Calculo III" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnBases" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Bases de datos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnAutomatas" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Automatas, gramaticas y lenguajes" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnParadigmas" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Paradigmas de programacion" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnFisica1" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Fisica I" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnCalculo2" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Calculo II" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnElementos" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Elementos de la teoria de la computacion" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnEstructuras" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Estructuras de datos" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnConstitucion" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Constitucion e instruccion civica" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Button fx:id="btnHerramientas" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Herramientas de la logica computacional" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Button fx:id="btnAlgebra" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Algebra lineal" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnCalculo1" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Calculo I" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnEtica" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Etica empresarial" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnQuimica" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Fundamentos de quimica" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnCultura" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Cultura ambiental" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnDigitales" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Sistemas digitales y ensambladores" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnPractica" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Practica aplicada" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnTeleco" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Telecomunicaciones" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnOper" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Investigacion de operaciones" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnElectiva2" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Electiva II" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnProbabilidad" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Probabilidad" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnMetodos" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Metodos numericos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnProceso" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Proceso administrativo" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnIngesoft1" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Ingenieria de Software I" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnElectiva1" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Electiva I" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnFisica2" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Fisica II" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnGrado" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Opcion de grado" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnElectiva4" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Electiva IV" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnEnfasis3" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Enfasis profesional III" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnEnfasis2" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Enfasis profesional II" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnDistribuidos" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Sistemas distribuidos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnGerencia" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Gerencia de proyectos informaticos" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnElectiva3" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Electiva III" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnArquitectura" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Arquitectura del computador" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnEnfasis1" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Enfasis profesional I" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnAnalisis" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Analisis y verificacion de algoritmos" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnOperacionales" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Sistemas operacionales" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Button fx:id="btnIngesoft2" mnemonicParsing="false" onAction="#clickMateria" prefHeight="45.0" prefWidth="96.0" text="Ingenieria de Software II" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </bottom>
+         <center>
+            <Separator prefHeight="0.0" prefWidth="622.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <GridPane BorderPane.alignment="BOTTOM_LEFT">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Sistema de intencion horaria" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#oprimirBotonSalir" prefHeight="25.0" prefWidth="83.0" text="Salir" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <Button fx:id="btnGrabar" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Grabar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+                  <Label text="Ingeniería de Sistemas" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
