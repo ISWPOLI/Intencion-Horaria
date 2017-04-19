@@ -1,0 +1,7 @@
+CREATE DATABASE `prueba` /*!40100 DEFAULT CHARACTER SET utf8 */;
+ create table usuarios (
+  usuario varchar(30),
+  clave varchar(10)
+ );
+
+INSERT INTO usuarios (usuario, clave) VALUES(santi, santi)
