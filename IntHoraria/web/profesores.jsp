@@ -16,8 +16,10 @@
         <h1>Bienvenido a la intencion horaria profesor</h1>
         <div>
             
+            
+            
             <form action="#" method="post">
-                <h1>porfavor escoja la materia que desea dictar</h1>
+                <h1>Por favor escoja la materia que desea dictar </h1>
                 <br />
                 <input name="cbipeliculas" type="checkbox" />m1
                 <br />
@@ -27,7 +29,7 @@
                 
                  <!-- actulizar formulario con la conexion a base de datos **preguntar**  -->
                  
-                 <?php  
+                 <?
                  while($row=  mysql_fetch_array($result2))
                  {
                   echo '<input type="checkbox" name="'.$row["materias"].'" value="'.$row["nombre"].'">'.$row["codigo"];
