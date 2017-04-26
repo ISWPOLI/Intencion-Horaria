@@ -70,7 +70,7 @@ public class Consultas extends Conexion {
         }
         try {
             while(rs.next()){
-                lista.add(rs.getString("Apellido"));
+                lista.add(rs.getString("ID"));
             }
         } catch (Exception e) {
         }
@@ -92,7 +92,7 @@ public class Consultas extends Conexion {
         }
         try {
             while(rs.next()){
-                lista.add(rs.getString("Apellido"));
+                lista.add(rs.getString("ID"));
             }
         } catch (Exception e) {
         }
