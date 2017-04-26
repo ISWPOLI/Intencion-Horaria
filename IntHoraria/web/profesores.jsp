@@ -1,6 +1,6 @@
 <%-- 
-    Document   : newjsp
-    Created on : 24/04/2017, 06:09:51 PM
+    Document   : index
+    Created on : 2/03/2017, 12:26:13 PM
     Author     : santi
 --%>
 
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <title>Intencion Horaria</title>
     </head>
-    <body>
+       <body>
         <h1>Bienvenido a la intencion horaria profesor</h1>
         <div>
             
