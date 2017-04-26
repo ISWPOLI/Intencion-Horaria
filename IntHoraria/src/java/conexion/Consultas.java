@@ -92,7 +92,7 @@ public class Consultas extends Conexion {
         }
         try {
             while(rs.next()){
-                lista.add(rs.getString("ID"));
+                lista.add(rs.getString("IDD"));
             }
         } catch (Exception e) {
         }
