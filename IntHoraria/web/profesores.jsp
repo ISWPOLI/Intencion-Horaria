@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/estilos.css"/>
         <title>Intencion Horaria</title>
     </head>
        <body>
@@ -27,15 +27,7 @@
                 <br />
                 <input name="cbiinternet" type="checkbox" />m3   
                 
-                 <!-- actulizar formulario con la conexion a base de datos **preguntar**  -->
-                 
-                 <?
-                 while($row=  mysql_fetch_array($result2))
-                 {
-                  echo '<input type="checkbox" name="'.$row["materias"].'" value="'.$row["nombre"].'">'.$row["codigo"];
-                 }
-                 ?>
-                 <!-- actulizar formulario con la conexion a base de datos **preguntar**  -->
+                
                  
                 <p><input type="submit" name="Aceptar" id="Aceptar" value="Aceptar"/></p> 
                 
