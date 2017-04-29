@@ -10,7 +10,7 @@ and open the template in the editor.
 *{
     margin: 0;
     padding: 0;
-    font font-family: sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 body{
