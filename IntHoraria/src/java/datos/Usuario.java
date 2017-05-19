@@ -12,9 +12,9 @@ package datos;
 public class Usuario {
 
     private int nuip ;
-    private String nombre_usario ;
+    private String nombre_usuario ;
     private String apellido_usuario ;
-    private boolean estado ;
+    private String email_usuario ;
     private String clave;
 
     /**
@@ -34,15 +34,15 @@ public class Usuario {
     /**
      * @return the nombre_usario
      */
-    public String getNombre_usario() {
-        return nombre_usario;
+    public String getNombre_usuario() {
+        return nombre_usuario;
     }
 
     /**
      * @param nombre_usario the nombre_usario to set
      */
-    public void setNombre_usario(String nombre_usario) {
-        this.nombre_usario = nombre_usario;
+    public void setNombre_usuario(String nombre_usario) {
+        this.nombre_usuario = nombre_usario;
     }
 
     /**
@@ -60,17 +60,17 @@ public class Usuario {
     }
 
     /**
-     * @return the estado
+     * @return the email_usuario
      */
-    public boolean isEstado() {
-        return estado;
+    public String getEmail_usuario() {
+        return email_usuario;
     }
 
     /**
-     * @param estado the estado to set
+     * @param email_usuario the email_usuario to set
      */
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    public void setEmail_usuario(String email_usuario) {
+        this.email_usuario = email_usuario;
     }
 
     /**
@@ -87,5 +87,4 @@ public class Usuario {
         this.clave = clave;
     }
 
-    
 }

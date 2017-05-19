@@ -15,7 +15,7 @@ public class Dao {
     public final static String portDb = "3306";
     public final static String nameDb = "bd_gestion_materias";
     public final static String userDb = "root";
-    public final static String passDb = "mysql";
+    public final static String passDb = "";
     
     //Conectar a la Base de datos
     public void conectar() throws SQLException,ClassNotFoundException{

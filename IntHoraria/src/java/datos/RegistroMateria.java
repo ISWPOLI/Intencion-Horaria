@@ -13,7 +13,7 @@ public class RegistroMateria {
 
     private int id_registro_materia ;
     private int id_materia ;
-    private int id_administrdor ;
+    private int id_administrador ;
     private int id_estudiante ;
     private int id_docente ;
 
@@ -48,15 +48,15 @@ public class RegistroMateria {
     /**
      * @return the id_administrdor
      */
-    public int getId_administrdor() {
-        return id_administrdor;
+    public int getId_administrador() {
+        return id_administrador;
     }
 
     /**
      * @param id_administrdor the id_administrdor to set
      */
-    public void setId_administrdor(int id_administrdor) {
-        this.id_administrdor = id_administrdor;
+    public void setId_administrador(int id_administrdor) {
+        this.id_administrador = id_administrdor;
     }
 
     /**

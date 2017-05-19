@@ -4,7 +4,7 @@
  */
 package modelo;
 
-import datos.Usuario;
+import datos.*;
 import java.sql.*;
 
 /**
@@ -16,60 +16,42 @@ public class MateriaDAO extends Dao {
     PreparedStatement ps = null;
     ResultSet rs = null;
 
-    public Integer agregarUsuario(Usuario usuario) throws SQLException {
-        String sql = "INSERT INTO usuario VALUES (?,?,?,?,?)";
+    public Integer agregarMateria(Materia materia) throws SQLException {
+        String sql = "INSERT INTO materia VALUES (null,?,?,?,?)";
         this.ps = conexion.prepareStatement(sql);
-        ps.setInt(1, usuario.getId_usuario());
-        ps.setString(2, usuario.getNombre_usario());
-        ps.setString(3, usuario.getApellido_usuario());
-        ps.setBoolean(4, usuario.isEstado());
-        ps.setString(5, usuario.getClave());
+        ps.setString(1, materia.getNombre_materia());
+        ps.setInt(2, materia.getId_carrera());
+        ps.setInt(3, materia.getId_materia_prerrequisito());
+        ps.setBoolean(4, materia.isEstado());
+        Integer num = ps.executeUpdate();
+        return num;
+    }
+
+    public Integer actualizarMateria(Materia materia) throws SQLException {
+        //String sql = "INSERT INTO materia (materia_nombre,materia_user,materia_clave) VALUES ('" + materia.getNombre() + "','" + materia.getMateria() + "','" + materia.getClave() + "')";
+        String sql = "UPDATE materia SET estado=?  WHERE id_materia=?";
+        this.ps = conexion.prepareStatement(sql);
+        ps.setBoolean(1, materia.isEstado());
+        ps.setInt(2, materia.getId_materia());
         Integer num = ps.executeUpdate();
         return num;
     }
     
-    public Integer actualizarUsuario(Usuario usuario) throws SQLException {
-        //String sql = "INSERT INTO usuario (usuario_nombre,usuario_user,usuario_clave) VALUES ('" + usuario.getNombre() + "','" + usuario.getUsuario() + "','" + usuario.getClave() + "')";
-        String sql = "UPDATE usuario SET clave=?  WHERE id_usuario=?";
+    /*
+    public Materia consultarMateria(String materia, String clave) throws SQLException {
+        Materia u = new Materia();
+        String sql = "SELECT u.id_materia, u.nombre_materia, u.clave FROM materia u WHERE 1=1 AND u.id_materia = ? AND u.clave = ?";
         this.ps = conexion.prepareStatement(sql);
-        ps.setString(1, usuario.getClave());
-        ps.setInt(2, usuario.getId_usuario());
-        Integer num = ps.executeUpdate();
-        return num;
-    }
-    
-    public Usuario consultarUsuario(String usuario, String clave) throws SQLException {        
-        Usuario u = new Usuario();
-        String sql = "SELECT u.id_usuario, u.nombre_usuario, u.clave FROM usuario u WHERE 1=1 AND u.id_usuario = ? AND u.clave = ?";
-        this.ps = conexion.prepareStatement(sql);
-        ps.setString(1, usuario);
+        ps.setString(1, materia);
         ps.setString(2, clave);
         this.rs = ps.executeQuery();
-        if(rs.next()){
-            u.setId_usuario(rs.getInt("id_usuario"));
-            u.setNombre_usario(rs.getString("nombre_usuario"));
+        if (rs.next()) {
+            u.setId_materia(rs.getInt("id_materia"));
+            u.setNombre_usario(rs.getString("nombre_materia"));
             u.setClave(rs.getString("clave"));
             return u;
         }
-        
-        return null;
-    }
-    
-        public Usuario comprobarUsuario(String usuario) throws SQLException {        
-        Usuario u = new Usuario();
-        String sql = "SELECT u.id_usuario, u.nombre_usuario, u.clave FROM usuario u WHERE 1=1 AND u.id_usuario = ?";
-        this.ps = conexion.prepareStatement(sql);
-        ps.setString(1, usuario);
-        this.rs = ps.executeQuery();
-        if(rs.next()){
-            u.setId_usuario(rs.getInt("id_usuario"));
-            u.setNombre_usario(rs.getString("nombre_usuario"));
-            u.setClave(rs.getString("clave"));
-            return u;
-        }
-        
-        return null;
-    }
-    
 
+        return null;
+    }*/
 }

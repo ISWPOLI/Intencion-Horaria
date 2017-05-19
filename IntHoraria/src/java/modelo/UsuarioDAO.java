@@ -4,7 +4,7 @@
  */
 package modelo;
 
-import datos.Usuario;
+import datos.*;
 import java.sql.*;
 
 /**
@@ -20,9 +20,9 @@ public class UsuarioDAO extends Dao {
         String sql = "INSERT INTO usuario VALUES (?,?,?,?,?)";
         this.ps = conexion.prepareStatement(sql);
         ps.setInt(1, usuario.getNuip());
-        ps.setString(2, usuario.getNombre_usario());
+        ps.setString(2, usuario.getNombre_usuario());
         ps.setString(3, usuario.getApellido_usuario());
-        ps.setBoolean(4, usuario.isEstado());
+        ps.setString(4, usuario.getEmail_usuario());
         ps.setString(5, usuario.getClave());
         Integer num = ps.executeUpdate();
         return num;
@@ -38,16 +38,16 @@ public class UsuarioDAO extends Dao {
         return num;
     }
     
-    public Usuario consultarUsuario(String usuario, String clave) throws SQLException {        
+    public Usuario consultarUsuario(int nuip, String clave) throws SQLException {        
         Usuario u = new Usuario();
-        String sql = "SELECT u.id_usuario, u.nombre_usuario, u.clave FROM usuario u WHERE 1=1 AND u.id_usuario = ? AND u.clave = ?";
+        String sql = "SELECT u.nuip, u.nombre_usuario, u.clave FROM usuario u WHERE 1=1 AND u.nuip = ? AND u.clave = ?";
         this.ps = conexion.prepareStatement(sql);
-        ps.setString(1, usuario);
+        ps.setInt(1, nuip);
         ps.setString(2, clave);
         this.rs = ps.executeQuery();
         if(rs.next()){
-            u.setNuip(rs.getInt("id_usuario"));
-            u.setNombre_usario(rs.getString("nombre_usuario"));
+            u.setNuip(rs.getInt("nuip"));
+            u.setNombre_usuario(rs.getString("nombre_usuario"));
             u.setClave(rs.getString("clave"));
             return u;
         }
@@ -63,7 +63,7 @@ public class UsuarioDAO extends Dao {
         this.rs = ps.executeQuery();
         if(rs.next()){
             u.setNuip(rs.getInt("id_usuario"));
-            u.setNombre_usario(rs.getString("nombre_usuario"));
+            u.setNombre_usuario(rs.getString("nombre_usuario"));
             u.setClave(rs.getString("clave"));
             return u;
         }
